@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       try {
         await liff.init({ liffId });
         console.log("LIFF initialized successfully");
-
+        
         // 2. LINE Login (if not already logged in)
         if (!liff.isLoggedIn()) {
           liff.login();
